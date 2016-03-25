@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "Tick Multiplier",
+  "version": "1",
+  "description": "Calculates pay for the current week on Tick",
+  "content_scripts": [ {
+    "js": [ "jquery.min.js", "background.js" ],
+    "matches": [ "http://*.tickspot.com/*", "https://*.tickspot.com/*"]
+  }],
+  "options_page": "options.html",
+  "permissions": [
+    "storage"
+  ]
+}
